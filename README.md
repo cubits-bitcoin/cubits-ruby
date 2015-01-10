@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ### Configuration
 
-First thing you have to do is to get your API token (key+secret) from Cubits  *...Merchant integration tab?..*
+First thing you have to do is to generate your API token (key+secret) from your [Cubits Pay](https://cubits.com/merchant) account in the API integration section.
 
 Then, configure your Cubits client:
 ```ruby
@@ -52,7 +52,7 @@ invoice.id # => "686e4238970a92f04f1f5a30035bf024"
 invoice.status # => "pending"
 invoice.invoice_amount # => "0.00446216"
 invoice.invoice_currency # => "BTC"
-invoice.address # => "2MwFC54RmUyHtyNcNuxtU5zW4hCGTvYuXti"
+invoice.address # => "3QJmV3qfvL9SuYo34YihAf3sRCW3qSinyC"
 ```
 
 #### .create
@@ -107,6 +107,3 @@ Cubits.send_money amount: '1.5000000', address: '3BnYBqPnGtRz2cfcnhxFKy3JswU3biM
 On success `.send_money` creates a transaction and returns its reference code.
 
 ----
-
-
-
